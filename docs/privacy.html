@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Money Tracker — Privacy policy</title>
+<style>
+  :root { --ink:#16140f; --paper:#faf8f4; --muted:#5c574c; --gold:#7a5f12; }
+  @media (prefers-color-scheme: dark) { :root { --ink:#efe9dc; --paper:#16140f; --muted:#b5ad9b; --gold:#e8c25a; } }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; color: var(--gold); }
+  p, li { color: var(--ink); }
+  .muted { color: var(--muted); }
+  a { color: var(--gold); }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; padding: .5rem .5rem .5rem 0; border-bottom: 1px solid color-mix(in srgb, var(--muted) 30%, transparent); vertical-align: top; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privacy policy</h1>
+<p class="muted">Money Tracker for Android · Effective 11 November 2026</p>
+
+<p>Money Tracker keeps your financial records on your phone. There is no Money Tracker
+server and no account with us: we cannot see your data, and we do not collect, sell or
+share it. The app has no advertising and no analytics.</p>
+
+<h2>What stays on your phone</h2>
+<p>Everything you enter or import — accounts, cards, transactions, budgets, bills,
+investments and goals — is stored in the app's private storage on your device, which other
+apps cannot read. Uninstalling the app deletes it.</p>
+
+<h2>Sync through your own Google Drive (optional)</h2>
+<p>If you sign in with Google, the app stores a copy of your records in the hidden
+<em>app data</em> area of <strong>your own</strong> Google Drive, so your other phones signed
+in to the same account stay up to date and a new phone can restore them. Only Money Tracker
+can read that area; it does not appear in your Drive and it is not shared with us.</p>
+<p>Signing in shares your name, email address and profile picture with the app on your
+phone, to show which account is in use. To remove the Drive copy: Google Drive →
+Settings → Manage apps → Money Tracker → Delete hidden app data.</p>
+
+<h2>Bank SMS (optional)</h2>
+<p>If you allow it, the app reads incoming SMS messages to recognise bank and card
+transaction alerts and record them for you. Messages are read on your phone. For an alert it
+records, the message text is kept with the transaction so you can see where it came from;
+like your other records it stays on your phone and, if you sync, in your own Drive. Other
+messages are ignored and not stored. You can turn this off in Settings, or revoke the SMS
+permission in Android settings.</p>
+
+<h2>Email import (optional)</h2>
+<p>If you connect a mailbox, the app reads bank emails and statement attachments directly
+from your mail provider over IMAP, using an app password you create. The password is
+encrypted with a key held in your phone's secure hardware keystore and never leaves the
+phone; mailbox settings are not synced. As with SMS, the text behind each transaction it records
+is kept with that transaction.</p>
+
+<h2>Services the app contacts</h2>
+<table>
+<tr><th>Service</th><th>Why</th><th>What it receives</th></tr>
+<tr><td>Google (sign-in, Drive)</td><td>Sign-in and sync, only if you sign in</td><td>Your Google account authorisation and your synced records, under Google's privacy policy</td></tr>
+<tr><td>jsDelivr / currency-api.pages.dev</td><td>Exchange rates</td><td>Currency codes and dates</td></tr>
+<tr><td>mfapi.in</td><td>Mutual fund prices</td><td>Fund scheme codes you hold</td></tr>
+<tr><td>Yahoo Finance</td><td>Stock prices</td><td>Ticker symbols you hold</td></tr>
+<tr><td>GitHub</td><td>Checking for app updates (GitHub download only)</td><td>A request for the latest version number</td></tr>
+</table>
+<p>None of these receive your name, balances or transactions. Like any website, they see
+your device's IP address when contacted.</p>
+
+<h2>Security</h2>
+<p>You can lock the app with a PIN or your fingerprint. Updates are verified against a
+published checksum and the app's signing key before they install.</p>
+
+<h2>Children</h2>
+<p>Money Tracker is not directed at children under 13.</p>
+
+<h2>Changes and contact</h2>
+<p>Changes to this policy are published on this page with a new effective date. Questions:
+<a href="https://github.com/amalcpaulson/money-tracker-releases/issues">open an issue</a>.</p>
+</main>
+</body>
+</html>
